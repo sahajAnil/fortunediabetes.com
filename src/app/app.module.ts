@@ -8,6 +8,7 @@ import { ServiceComponent } from './doctorService/service.component';
 import { FacilitiesComponent } from './facilities/facilities.component';
 import { BookAppointmentComponent } from './book-appointment/book-appointment.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

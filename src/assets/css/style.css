@@ -623,7 +623,7 @@ hr.bold {
 ============================ */
 
 .home-section {
-    padding-top: 150px;
+    padding-top: 170px;
 	display:block;
     position:relative;
     z-index:120;
@@ -728,7 +728,7 @@ hr.bold {
 
 .intro-content {
 	background: url(../img/dummy/bg1.jpg) no-repeat top center;
-	padding:200px 0 60px;
+	padding:180px 0 60px;
 }
 .intro-content.intro-nobg {
 	background:#fff;

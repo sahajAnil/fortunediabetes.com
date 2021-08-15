@@ -11,15 +11,17 @@ import { appoint } from '../appoint';
 export class BookAppointmentComponent implements OnInit {
   
   Appoint: appoint=new appoint("","","","");
+  messages:any;
   message:any;
 
   constructor(private service:BookAppointmentServiceService) { }
 
   ngOnInit() {
-    console.log("from Anil Book page Appointment");
   }
     public submit(){
       let resp=this.service.doAppointment(this.Appoint);
-      resp.subscribe((data)=>this.message=data);
+      resp.subscribe((data)=>this.messages=data);
+      this.message ="You have succesfully booked appointment!";
+
         }
 }

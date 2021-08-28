@@ -13,3 +13,5 @@ export class BookAppointmentServiceService {
     return this.http.post("http://localhost:8080/addAppointment",appoint,{responseType:'text' as 'json'});
   }
 }
+
+
